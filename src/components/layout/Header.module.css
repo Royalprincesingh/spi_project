@@ -17,3 +17,10 @@
   opacity: 1;
   text-decoration: none;
 }
+.cbc{
+  background:linear-gradient(to right,rgb(118,138,77),rgb(40,56,20)) ;
+}
+.foot{
+  background:linear-gradient(to bottom,rgb(49,46,30),rgb(33,32,28)) ;
+
+}

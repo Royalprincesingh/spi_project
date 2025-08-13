@@ -4,66 +4,67 @@ import { useNavigate } from 'react-router-dom';
 import Notification from '../../common/Notification';
 
 const ADMIN_TYPES = [
-  { key: 'super', label: 'Super Admin', icon: '👑', color: 'primary' },
-  { key: 'product', label: 'Product Admin', icon: '📦', color: 'success' },
-  { key: 'farmer', label: 'Farmer Admin', icon: '👨‍🌾', color: 'success' },
-  { key: 'order', label: 'Order Admin', icon: '📋', color: 'warning' },
-  { key: 'finance', label: 'Finance Admin', icon: '💰', color: 'secondary' },
+  { key: 'super', label: 'Super Admin', color: 'primary' },
+  { key: 'product', label: 'Product Admin', color: 'success' },
+  { key: 'farmer', label: 'Farmer Admin', color: 'success' },
+  { key: 'order', label: 'Order Admin', color: 'warning' },
+  { key: 'finance', label: 'Finance Admin', color: 'secondary' },
 ];
 
 const SUPER_ADMIN_SECTIONS = [
-  { key: 'overview', label: 'Overview', icon: '📊' },
-  { key: 'farmers', label: 'Farmers', icon: '👨‍🌾' },
-  { key: 'products', label: 'Products', icon: '📦' },
-  { key: 'orders', label: 'Orders', icon: '📋' },
-  { key: 'finance', label: 'Finance', icon: '💰' },
-  { key: 'admins', label: 'Admins', icon: '👨‍💼' },
-  { key: 'settings', label: 'Settings', icon: '⚙️' },
+  { key: 'overview', label: 'Overview' },
+  { key: 'farmers', label: 'Farmers' },
+  { key: 'products', label: 'Products' },
+  { key: 'orders', label: 'Orders' },
+  { key: 'finance', label: 'Finance' },
+  { key: 'admins', label: 'Admins' },
+  { key: 'settings', label: 'Settings' },
 ];
 
 const PRODUCT_ADMIN_SECTIONS = [
-  { key: 'overview', label: 'Overview', icon: '📊' },
-  { key: 'products', label: 'Product Management', icon: '📦' },
-  { key: 'stats', label: 'Basic Stats', icon: '📈' },
-  { key: 'analytics', label: 'Analytics', icon: '📊' },
-  { key: 'settings', label: 'Settings', icon: '⚙️' },
+  { key: 'overview', label: 'Overview' },
+  { key: 'products', label: 'Product Management' },
+  { key: 'stats', label: 'Basic Stats' },
+  { key: 'analytics', label: 'Analytics' },
+  { key: 'settings', label: 'Settings' },
 ];
 
 const FARMER_ADMIN_SECTIONS = [
-  { key: 'overview', label: 'Overview', icon: '📊' },
-  { key: 'approval', label: 'Approval', icon: '✅' },
-  { key: 'list', label: 'Farmer List', icon: '📋' },
-  { key: 'management', label: 'Management', icon: '⚙️' },
-  { key: 'users', label: 'All Users', icon: '👥' },
-  { key: 'support', label: 'Support', icon: '🆘' },
+  { key: 'overview', label: 'Overview' },
+  { key: 'approval', label: 'Approval' },
+  { key: 'list', label: 'Farmer List' },
+  { key: 'management', label: 'Management' },
+  { key: 'users', label: 'All Users' },
+  { key: 'support', label: 'Support' },
 ];
 
 const ORDER_ADMIN_SECTIONS = [
-  { key: 'overview', label: 'Overview', icon: '📊' },
-  { key: 'orders', label: 'All Orders', icon: '📋' },
-  { key: 'delivery', label: 'Delivery Assignment', icon: '🚚' },
-  { key: 'tracking', label: 'Shipment Tracking', icon: '📍' },
+  { key: 'overview', label: 'Overview' },
+  { key: 'orders', label: 'All Orders' },
+  { key: 'delivery', label: 'Delivery Assignment' },
+  { key: 'tracking', label: 'Shipment Tracking' },
 ];
 
 const FINANCE_ADMIN_SECTIONS = [
-  { key: 'overview', label: 'Overview', icon: '📊' },
-  { key: 'transactions', label: 'Transaction History', icon: '💰' },
-  { key: 'reports', label: 'Finance Reports', icon: '📈' },
-  { key: 'commission', label: 'Commission Management', icon: '💸' },
+  { key: 'overview', label: 'Overview' },
+  { key: 'transactions', label: 'Transaction History' },
+  { key: 'reports', label: 'Finance Reports' },
+  { key: 'commission', label: 'Commission Management' },
 ];
 
-// Icon map for product types
+// Icon map for product types (removed icons, so empty object)
 const PRODUCT_TYPE_ICONS = {
-  Wheat: '🌾',
-  Rice: '🍚',
-  Corn: '🌽',
-  Oats: '🌾',
-  Barley: '🌾',
-  Millet: '🌾',
-  Other: '📦',
+  Wheat: '',
+  Rice: '',
+  Corn: '',
+  Oats: '',
+  Barley: '',
+  Millet: '',
+  Other: '',
 };
 
-const getIconForType = (type) => PRODUCT_TYPE_ICONS[type] || '📦';
+
+const getIconForType = (type) => PRODUCT_TYPE_ICONS[type] ;
 
 const formatINR = (amount) =>
   new Intl.NumberFormat('en-IN', {
@@ -1266,7 +1267,7 @@ const [confirmResetPassword, setConfirmResetPassword] = useState('');
   // Render Product Admin Overview Cards
   const renderProductOverviewCards = () => (
     <div>
-    <div className="row">
+    <div className="row ">
       <div className="col-md-2 mb-3">
           <div className="card bg-success text-white" role="button" tabIndex={0} onClick={() => openProductsWithFilter({})} style={{ cursor: 'pointer' }}>
           <div className="card-body text-center">
@@ -1693,7 +1694,7 @@ const [confirmResetPassword, setConfirmResetPassword] = useState('');
 
   // Render Order Admin Overview Cards
   const renderOrderOverviewCards = () => (
-    <div className="row">
+    <div className="row ">
       <div className="col-md-2 mb-3">
         <div className="card bg-primary text-white">
           <div className="card-body text-center">
@@ -3584,21 +3585,21 @@ const [confirmResetPassword, setConfirmResetPassword] = useState('');
   );
 
   return (
-    <div className="container-fluid vh-100 d-flex">
+    <div className="container-fluid text-black vh-100 d-flex">
       {/* Full Screen Sidebar */}
-      <div className="col-md-2 bg-dark text-white p-0">
+      <div className="col-md-2 bg-d text-black p-0 cbc">
         <div className="p-3 border-bottom">
           <h5 className="mb-1">Admin Panel</h5>
-          <small className="text-muted">Welcome, {user?.firstName || 'Admin'}</small>
+          <small className="text-black">Welcome, {user?.firstName || 'Admin'}</small>
         </div>
-        <div className="p-3">
-          <button onClick={handleLogout} className="btn btn-outline-light btn-sm w-100 mb-3">
+        <div className="p-3 text-black ">
+          <button onClick={handleLogout} className="btn btn-outline-light cbc  btn-sm w-100 mb-3">
             Logout
           </button>
           {/* Sidebar: Admins list */}
-          <div className="mb-3">
-            <h6 className="text-white-50 mb-2">Admins</h6>
-            <div className="list-group">
+          <div className="mb-3 ">
+            <h6 className="text-black-50 mb-2">Admins</h6>
+            <div className="list-group ">
               {admins.map((a) => (
                 <div key={a.id} className="list-group-item list-group-item-action p-2">
                   <div className="d-flex justify-content-between align-items-center">
@@ -3615,7 +3616,7 @@ const [confirmResetPassword, setConfirmResetPassword] = useState('');
         </div>
         <ul className="list-group list-group-flush">
           {ADMIN_TYPES.map(adminType => (
-            <li key={adminType.key} className="list-group-item bg-dark border-0 p-0">
+            <li key={adminType.key} className="list-group-item cbc border-0 p-0">
               <button
                 className={`btn w-100 text-start p-3 ${activeAdminType === adminType.key ? `btn-${adminType.color}` : 'btn-dark'}`}
                 style={{ borderRadius: 0, border: 'none' }}
@@ -3633,21 +3634,21 @@ const [confirmResetPassword, setConfirmResetPassword] = useState('');
       <div className="col-md-10 p-0">
         {/* Header with Super Admin Sections */}
         {activeAdminType === 'super' && (
-          <div className="bg-light border-bottom p-3">
+          <div className="bg-d border-bottom p-3 cbc">
             <div className="row align-items-center">
               <div className="col-md-4">
                 <h4 className="mb-0">Super Admin Dashboard</h4>
                 <small className="text-muted">Welcome {user?.firstName || 'Admin'}, have a productive day!</small>
               </div>
-              <div className="col-md-6">
-                <div className="d-flex flex-wrap gap-2">
+              <div className="col-md-6 d-flex ">
+                <div className=" gap-2  ">
                   {SUPER_ADMIN_SECTIONS.map(section => (
                     <button
                       key={section.key}
-                      className={`btn btn-sm ${activeSection === section.key ? 'btn-primary' : 'btn-outline-primary'}`}
+                      className={`btn btn-sm  ${activeSection === section.key ? 'btn-primary' : 'btn-outline-primary'}`}
                       onClick={() => handleSectionChange(section.key)}
                     >
-                      <span className="me-1">{section.icon}</span>
+                      <span className="me-1 ">{section.icon}</span>
                       {section.label}
                     </button>
                   ))}
@@ -3665,8 +3666,8 @@ const [confirmResetPassword, setConfirmResetPassword] = useState('');
         )}
 
         {/* Header with Product Admin Sections */}
-        {activeAdminType === 'product' && (
-          <div className="bg-light border-bottom p-3">
+        {activeAdminType === 'product' &&(
+          <div className="bg-light border-bottom p-3 cbc">
             <div className="row align-items-center">
               <div className="col-md-4">
                 <h4 className="mb-0">Product Admin Dashboard</h4>
@@ -3699,7 +3700,7 @@ const [confirmResetPassword, setConfirmResetPassword] = useState('');
 
         {/* Header with Order Admin Sections */}
         {activeAdminType === 'order' && (
-          <div className="bg-light border-bottom p-3">
+          <div className="bg-light border-bottom p-3 cbc">
             <div className="row align-items-center">
               <div className="col-md-4">
                 <h4 className="mb-0">Order Admin Dashboard</h4>
@@ -3732,7 +3733,7 @@ const [confirmResetPassword, setConfirmResetPassword] = useState('');
 
         {/* Header with Farmer Admin Sections */}
         {activeAdminType === 'farmer' && (
-          <div className="bg-light border-bottom p-3">
+          <div className="bg-light border-bottom p-3 cbc">
             <div className="row align-items-center">
               <div className="col-md-4">
                 <h4 className="mb-0">Farmer Admin Dashboard</h4>
@@ -3765,7 +3766,7 @@ const [confirmResetPassword, setConfirmResetPassword] = useState('');
 
         {/* Header with Finance Admin Sections */}
         {activeAdminType === 'finance' && (
-          <div className="bg-light border-bottom p-3">
+          <div className="bg-light border-bottom p-3 cbc">
             <div className="row align-items-center">
               <div className="col-md-4">
                 <h4 className="mb-0">Finance Admin Dashboard</h4>

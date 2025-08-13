@@ -88,14 +88,14 @@ const SignUp = () => {
   };
 
   return (
-    <div className="container-fluid" style={{ 
-      minHeight: '100vh', 
-      background: 'linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%)',
-      padding: '20px 0'
+    <div className="container-fluid bg-d mb-0" style={{ 
+ 
+     
+      padding: '50px 0'
     }}>
       <div className="row justify-content-center align-items-center">
         <div className="col-md-6 col-lg-4">
-          <div className="card shadow-lg border-0" style={{ borderRadius: '15px' }}>
+          <div className="card cbc shadow-lg border-0" style={{ borderRadius: '15px' }}>
             <div className="card-body p-5">
                              <div className="text-center mb-4">
                  <img 
@@ -103,10 +103,10 @@ const SignUp = () => {
                    alt="Agri Logo" 
                    width="80" 
                    height="80" 
-                   style={{ background: 'white', borderRadius: '50%', marginBottom: '20px' }}
+                   style={{  borderRadius: '50%', marginBottom: '20px' }}
                  />
-                 <h2 className="fw-bold text-dark mb-2">Create Account</h2>
-                 <p className="text-muted">Join our agricultural community</p>
+                 <h2 className="fw-bold text-white mb-2">Create Account</h2>
+                 <p className="text-black">Join our agricultural community</p>
                  {formData.userType && (
                    <div className="mt-3">
                      <span className={`badge fs-6 px-3 py-2`} style={{ 
@@ -231,9 +231,9 @@ const SignUp = () => {
                 </button>
 
                 <div className="text-center">
-                  <p className="mb-0 text-muted">
+                  <p className="mb-0 text-black">
                     Already have an account?{' '}
-                    <Link to="/login" className="text-decoration-none fw-semibold" style={{ color: '#2E7D32' }}>
+                    <Link to="/login" className="underline-animate fw-semibold" style={{ color: '#ffffffff' }}>
                       Sign In
                     </Link>
                   </p>

@@ -41,14 +41,14 @@ const RoleSelection = () => {
   };
 
   return (
-    <div className="container-fluid" style={{ 
+    <div className="container-fluid bg-d" style={{ 
       minHeight: '100vh', 
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      // background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
       padding: '20px 0'
     }}>
-      <div className="row justify-content-center align-items-center">
+      <div className="row text-center text-black justify-content-center align-items-center">
         <div className="col-12">
-          <div className="text-center mb-5">
+          <div className="text-centermb-5">
             <img 
               src="/agri-logo.png" 
               alt="Agri Logo" 
@@ -56,9 +56,9 @@ const RoleSelection = () => {
               height="100" 
               style={{ background: 'white', borderRadius: '50%', marginBottom: '20px' }}
             />
-            <h1 className="text-white fw-bold mb-3">Welcome to AgriConnect</h1>
-            <p className="text-white fs-5 mb-4">Choose your role to get started</p>
-            <p className="text-white-50">Connect farmers directly with merchants, eliminating middlemen</p>
+            <h1 className="text-black fw-bold mb-3">Welcome to AgriConnect</h1>
+            <p className="text-black fs-5 mb-4">Choose your role to get started</p>
+            <p className="text-black-50">Connect farmers directly with merchants, eliminating middlemen</p>
           </div>
 
           <div className="row justify-content-center">
@@ -128,14 +128,14 @@ const RoleSelection = () => {
             ))}
           </div>
 
-          <div className="text-center mt-5">
-            <p className="text-white-50 mb-2">Already have an account?</p>
+          <div className="text-center  mt-5">
+            <p className="text-black-50  mb-2">Already have an account?</p>
             <Link 
               to="/login" 
-              className="btn btn-outline-light"
+              className="btn cbc  text-white btn-outline-green"
               style={{ borderRadius: '25px', padding: '10px 30px' }}
             >
-              Sign In Instead
+              LogIn Instead
             </Link>
           </div>
         </div>

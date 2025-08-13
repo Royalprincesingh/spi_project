@@ -171,10 +171,10 @@
 }
 .underline-animate:hover::after {
   width: 100%;
-  color: black !important;
+  color: black ;
 }
 .underline-animate:hover {
-  color: rgb(2, 0, 0) !important;
+  color: rgb(2, 0, 0) ;
 }
 @media (max-width: 768px) {
   .section-title {
@@ -263,4 +263,14 @@
     font-size: 0.9rem;
     min-height: 120px;
   }
+}
+.bg-d{
+  background-color:rgb(240, 243, 230) ;
+}
+.cbc{
+  background:linear-gradient(to right,rgb(118,138,77),rgb(40,56,20)) ;
+}
+.foot{
+  background:linear-gradient(to bottom,rgb(49,46,30),rgb(33,32,28)) ;
+
 }

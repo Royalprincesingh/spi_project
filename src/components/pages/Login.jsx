@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import './css/Home.css';
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -314,25 +315,24 @@ const Login = () => {
   }
 
   return (
-    <div className="container-fluid" style={{ 
-      minHeight: '100vh', 
-      background: 'linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%)',
+    <div className="container-fluid bg-d mb-5" style={{ 
+
       padding: '20px 0'
     }}>
       <div className="row justify-content-center align-items-center">
         <div className="col-md-6 col-lg-4">
           <div className="card shadow-lg border-0" style={{ borderRadius: '15px' }}>
-            <div className="card-body p-5">
+            <div className="card-body cbc p-5">
               <div className="text-center mb-4">
                 <img 
                   src="/agri-logo.png" 
                   alt="Agri Logo" 
                   width="80" 
                   height="80" 
-                  style={{ background: 'white', borderRadius: '50%', marginBottom: '20px' }}
+                  style={{ borderRadius: '50%', marginBottom: '20px' }}
                 />
-                <h2 className="fw-bold text-dark mb-2">Welcome Back</h2>
-                <p className="text-muted">Sign in to your account</p>
+                <h2 className="fw-bold text-white">Welcome Back</h2>
+                <p className="text-white">Sign in to your account</p>
                 
 
                 
@@ -401,23 +401,23 @@ const Login = () => {
                   {isLoading ? (
                     <>
                       <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
-                      Signing In...
+                      loging In...
                     </>
                   ) : (
-                    'Sign In'
+                    'login'
                   )}
                 </button>
 
                 <div className="text-center mb-3">
-                  <Link to="/forgot-password" className="text-decoration-none fw-semibold" style={{ color: '#2E7D32' }}>
+                  <Link to="/forgot-password" className="underline-animate fw-semibold" style={{ color: '#ffffffff' }}>
                     Forgot your password?
                   </Link>
                 </div>
 
                 <div className="text-center">
-                  <p className="mb-0 text-muted">
+                  <p className="mb-0 text-black">
                     Don't have an account?{' '}
-                    <Link to="/signup" className="text-decoration-none fw-semibold" style={{ color: '#2E7D32' }}>
+                    <Link to="/signup" className="underline-animate fw-semibold" style={{ color: '#ffffffff' }}>
                       Sign Up
                     </Link>
                   </p>

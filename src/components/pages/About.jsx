@@ -1,11 +1,12 @@
 import React from "react";
+import './css/Home.css';
 
 function About() {
   return (
-    <div className="about-page">
+    <div className="about-page bg-d" style={{ minHeight: '100vh' }}>
       {/* Hero Section */}
-      <section className="bg-gradient-success text-white py-5" style={{background: 'linear-gradient(135deg, #28a745 0%, #20c997 100%)'}} data-aos="fade-up">
-        <div className="container">
+      <section className="cbc text-white py-5"  data-aos="fade-up">
+        <div className="container ">
           <div className="row align-items-center min-vh-50">
             <div className="col-lg-6" data-aos="fade-right" data-aos-delay="200">
               <h1 className="display-3 fw-bold mb-4">About AgriTrade</h1>
@@ -29,7 +30,7 @@ function About() {
                   <small>Transactions</small>
                 </div>
               </div>
-              <a href="/role-selection" className="btn btn-light btn-lg px-4">Join Our Community</a>
+                <a href="/role-selection" className="btn btn-light btn-lg px-4">Join Our Community</a>
             </div>
             <div className="col-lg-6 text-center" data-aos="fade-left" data-aos-delay="300">
               <img src="/agri-logo.png" alt="AgriTrade" className="img-fluid" style={{maxWidth: '300px'}} />
@@ -266,7 +267,7 @@ function About() {
           </div>
 
           {/* Admin 5 - Farmer Admin */}
-          <div className="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="700">
+          <div className=" bg-d col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="700">
             <div className="card h-100 shadow-sm border-0">
               <div className="card-body text-center p-4">
                 <div className="rounded-circle bg-secondary d-inline-flex align-items-center justify-content-center mb-3" style={{width: '80px', height: '80px'}}>
@@ -288,8 +289,8 @@ function About() {
                 <div className="rounded-circle bg-dark d-inline-flex align-items-center justify-content-center mb-3" style={{width: '80px', height: '80px'}}>
                   <span className="text-white fw-bold fs-3">LK</span>
                 </div>
-                <h5 className="card-title fw-bold">Lavkush</h5>
-                <p className="text-dark fw-semibold mb-2">Supervision Admin</p>
+                <h5 className="card-title fw-bold">Lavkush kumar</h5>
+                <p className="text-dark fw-semibold mb-2">Merchant</p>
                 <p className="card-text text-muted">
                   Supervises overall platform operations, quality control, and ensures all administrative functions work in harmony.
                 </p>
@@ -300,7 +301,7 @@ function About() {
       </div>
 
       {/* Call to Action Section */}
-      <section className="bg-success text-white py-5" data-aos="zoom-in">
+      <section className="cbc text-white py-5" data-aos="zoom-in">
         <div className="container">
           <div className="row text-center">
             <div className="col-12" data-aos="fade-up" data-aos-delay="200">
@@ -314,7 +315,7 @@ function About() {
                   <i className="fas fa-user-plus me-2"></i>
                   Get Started Today
                 </a>
-                <a href="/Contact us" className="btn btn-outline-light btn-lg px-4">
+                <a href="/contact" className="btn btn-outline-light btn-lg px-4">
                   <i className="fas fa-envelope me-2"></i>
                   Contact Us
                 </a>

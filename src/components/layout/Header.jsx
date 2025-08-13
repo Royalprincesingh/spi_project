@@ -8,7 +8,7 @@ const navItems = [
   { label: 'Commodities', to: '#', isCommodities: true },
   { label: 'About Us', to: '/about' },
   { isLogo: true },
-  { label: 'Contact Us', to: '/Contact us' },
+  { label: 'Contact Us', to: '/Contact' },
   { label: 'Signup', to: '/role-selection' },
   { label: 'Login', to: '/login' },
 ];

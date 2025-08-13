@@ -20,7 +20,7 @@ import ProtectedRoute from './components/auth/ProtectedRoute';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-d">
       <Routes>
         {/* Landing Page Routes */}
         <Route path="/" element={

@@ -1,5 +1,6 @@
 // app/src/components/pages/ContactUs.jsx
 import React, { useState } from 'react';
+import './css/Home.css';
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -35,7 +36,7 @@ function ContactUs() {
   return (
     <div className="contact-page">
       {/* Hero Section */}
-      <section className="bg-success text-white py-5" data-aos="fade-up">
+      <section className="cbc text-white py-5" data-aos="fade-up">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6" data-aos="fade-right" data-aos-delay="200">
@@ -162,6 +163,7 @@ function ContactUs() {
             </div>
 
             {/* Contact Information */}
+
             <div className="col-lg-4" data-aos="fade-left" data-aos-delay="300">
               <div className="card shadow-lg border-0 h-100">
                 <div className="card-body p-4">
@@ -252,7 +254,7 @@ function ContactUs() {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-light py-5" data-aos="fade-up">
+      <section className="bg-d py-5" data-aos="fade-up">
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5" data-aos="fade-down" data-aos-delay="200">
@@ -261,35 +263,35 @@ function ContactUs() {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div className="col-lg-6  mb-4" data-aos="fade-up" data-aos-delay="300">
               <div className="card border-0 h-100">
-                <div className="card-body">
-                  <h5 className="fw-bold text-success">How do I register as a farmer?</h5>
-                  <p className="text-muted">Simply click on "Sign Up" and select "Farmer" to start your registration process. You'll need to provide some basic information and verify your farming credentials.</p>
+                <div className="card-body cbc">
+                  <h5 className="fw-bold text-white">How do I register as a farmer?</h5>
+                  <p className="text-white">Simply click on "Sign Up" and select "Farmer" to start your registration process. You'll need to provide some basic information and verify your farming credentials.</p>
                 </div>
               </div>
             </div>
             <div className="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
               <div className="card border-0 h-100">
-                <div className="card-body">
-                  <h5 className="fw-bold text-success">How do payments work?</h5>
-                  <p className="text-muted">We offer secure payment processing with multiple payment options. Farmers receive payments directly after successful order completion and delivery confirmation.</p>
+                <div className="card-body cbc">
+                  <h5 className="fw-bold text-white">How do payments work?</h5>
+                  <p className="text-white">We offer secure payment processing with multiple payment options. Farmers receive payments directly after successful order completion and delivery confirmation.</p>
                 </div>
               </div>
             </div>
             <div className="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="500">
               <div className="card border-0 h-100">
-                <div className="card-body">
-                  <h5 className="fw-bold text-success">What products can I sell?</h5>
-                  <p className="text-muted">You can sell various agricultural products including grains, vegetables, fruits, seeds, and other farm produce. All products must meet our quality standards.</p>
+                <div className="card-body cbc">
+                  <h5 className="fw-bold text-white">What products can I sell?</h5>
+                  <p className="text-white">You can sell various agricultural products including grains, vegetables, fruits, seeds, and other farm produce. All products must meet our quality standards.</p>
                 </div>
               </div>
             </div>
             <div className="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="600">
               <div className="card border-0 h-100">
-                <div className="card-body">
-                  <h5 className="fw-bold text-success">Is there customer support?</h5>
-                  <p className="text-muted">Yes! We provide 24/7 customer support through phone, email, and chat. Our team is always ready to help both farmers and buyers.</p>
+                <div className="card-body cbc">
+                  <h5 className="fw-bold text-white">Is there customer support?</h5>
+                  <p className="text-white">Yes! We provide 24/7 customer support through phone, email, and chat. Our team is always ready to help both farmers and buyers.</p>
                 </div>
               </div>
             </div>

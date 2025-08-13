@@ -19,8 +19,11 @@ function Home() {
 
   return (
     <React.Fragment>
+      <div className="container-fluid">
+        <div className="col-md-12">
       {/* Logout Button - Only show when authenticated */}
       {isAuthenticated() && (
+        
         <div className="container-fluid bg-light py-2">
           <div className="row">
             <div className="col-12 text-end">
@@ -36,6 +39,7 @@ function Home() {
       )}
 
       {/* HERO + CAROUSEL OVERLAY SECTION */}
+      
       <section className="hero-carousel-section position-relative">
         <div id="carouselExampleCaptions" className="carousel slide">
           <div className="carousel-indicators">
@@ -95,39 +99,41 @@ function Home() {
           <p className="lead mt-3 mb-4 text-white text-shadow">
             Sell your produce directly to clients. No middlemen. Better prices. Trusted platform.
           </p>
-          <Link to="/login" className="btn btn-success btn-lg mx-2">Get Started</Link>
+          <Link to="/login" className="btn btn-success  btn-lg mx-2">Get Started</Link>
           <button onClick={scrollToProducts} className="btn btn-outline-light btn-lg mx-2">Browse Products</button>
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
+
+                <div className=" row bg-d">
       <section className="container my-5" data-aos="fade-up">
         <h2 className="text-center mb-4" data-aos="fade-down" data-aos-delay="200">How It Works</h2>
-        <div className="row text-center">
-          <div className="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-            <img src="/public/icons/icons8-farmer-100.png" alt="Register" width="60" />
+          <div className="row text-center">
+            <div className="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <img src="/icons/icons8-farmer-100.png" alt="Register" width="60" />
             <h5>Register</h5>
             <p>Farmers sign up and list their produce.</p>
           </div>
           <div className="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
-            <img src="/public/icons/icons8-browse-100.png" alt="Browse" width="60" />
+              <img src="/icons/icons8-browse-100.png" alt="Browse" width="60" />
             <h5>Browse</h5>
             <p>Buyers browse and select products.</p>
           </div>
           <div className="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="500">
-            <img src="/public/icons/icons8-payment-100.png" alt="Payment" width="60" />
+              <img src="/icons/icons8-payment-100.png" alt="Payment" width="60" />
             <h5>Direct Payment</h5>
             <p>Secure, direct payments to farmers.</p>
           </div>
           <div className="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="600">
-            <img src="/public/icons/icons8-delivery-100.png" alt="Delivery" width="60" />
+              <img src="/icons/icons8-delivery-100.png" alt="Delivery" width="60" />
             <h5>Delivery</h5>
             <p>Fresh produce delivered to your door.</p>
           </div>
         </div>
       </section>
-
+      </div>
       {/* TRUST & SAFETY SECTION */}
+      <div className="bg-d row">
       <section className="container-fluid my-5" data-aos="fade-up">
         <h2 className="text-center mb-4" data-aos="fade-down" data-aos-delay="200">Trust & Safety</h2>
         <div className="row text-center">
@@ -148,8 +154,9 @@ function Home() {
           </div>
         </div>
       </section>
-
+      </div>
       {/* products */}
+      <div className="bg-d row">
       <div id="products-section" className="row mt-5" data-aos="fade-up">
         <div className="col-md-10" >
         <h2 className="section-title mb-4" style={{paddingLeft:'50px'}} data-aos="fade-right" data-aos-delay="200">Top Products</h2>
@@ -208,8 +215,9 @@ function Home() {
           </div>
         </div>
       </div>
-
+      </div>
       {/* CATEGORY SECTION */}
+      <div className="bg-d row ">
       <section className="container-fluid my-5" data-aos="fade-up">
         <div className="row mt-5">
           <div className="col-12">
@@ -343,13 +351,15 @@ function Home() {
           </div>
         </div>
       </section>
-
+      </div>
       {/* BENEFITS SECTION */}
+      <div className="bg-d row">
+        <div className="col-md-12">
       <section className="container my-5" data-aos="fade-up">
         <h2 className="text-center mb-4" data-aos="fade-down" data-aos-delay="200">Why Choose Us?</h2>
-        <div className="row text-center">
+        <div className="row text-center ">
           <div className="col-md-6 mb-4" data-aos="slide-right" data-aos-delay="300">
-            <div className="p-4 border rounded bg-white h-100">
+            <div className="p-4 border rounded cbc text-white h-100">
               <h4>For Farmers</h4>
               <ul className="list-unstyled mt-3">
                 <li>✔ Better prices, no commission</li>
@@ -360,7 +370,7 @@ function Home() {
             </div>
           </div>
           <div className="col-md-6 mb-4" data-aos="slide-left" data-aos-delay="400">
-            <div className="p-4 border rounded bg-white h-100">
+            <div className="p-4 border rounded cbc text-white h-100">
               <h4>For Buyers</h4>
               <ul className="list-unstyled mt-3">
                 <li>✔ Fresh, quality produce</li>
@@ -372,6 +382,9 @@ function Home() {
           </div>
         </div>
       </section>
+      </div>
+      </div>
+      </div></div>
     </React.Fragment>
   );
 }
